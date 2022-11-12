@@ -7,14 +7,15 @@ VALUES
 SELECT 'insert users done!' as msg;
 
 INSERT INTO properties(
+  title,
   description, 
   cost_per_night,
   parking_spaces,
   number_of_bathrooms,
   number_of_bedrooms,
-  thumbnail_url,
+  thumbnail_photo_url,
   cover_photo_url,
-  status,
+  active,
   country,
   street,
   city,
@@ -22,15 +23,15 @@ INSERT INTO properties(
   post_code,
   owner_id)
 VALUES
-('lorem ipsum', 10.25, 0, 3, 15,
+('house1', 'lorem ipsum', 10.25, 0, 3, 15,
 'https://github.com/BryceHaley/LightBnB/blob/main/images/t1.jpeg?raw=true',
 'https://github.com/BryceHaley/LightBnB/blob/main/images/c1.jpeg?raw=true',
 TRUE, 'Canada', '1st street', 'Ottawa', 'ON','1a1a1a', 1),
-('dolor sit amet', 425.00, 2, 1, 2,
+('house2', 'dolor sit amet', 425.00, 2, 1, 2,
 'https://github.com/BryceHaley/LightBnB/blob/main/images/t2.png?raw=true',
 'https://github.com/BryceHaley/LightBnB/blob/main/images/c2.jpeg?raw=true',
 TRUE, 'Canada', '2nd street', 'Vancouver', 'BC','2b2b2b', 1),
-('consectetur adipiscing elit', 74.99, 6, 2, 2,
+('house3','consectetur adipiscing elit', 74.99, 6, 2, 2,
 'https://github.com/BryceHaley/LightBnB/blob/main/images/t3.png?raw=true',
 'https://github.com/BryceHaley/LightBnB/blob/main/images/c3.jpeg?raw=true',
 FALSE, 'Canada', '3rd street', 'Truro', 'NS','3c3c3c', 1);
